@@ -32,6 +32,16 @@
     border-radius: 10px;
     display: block;
   }
+  @media (max-width: 600px) {
+  .card img {
+    height: auto;        /* убираем фиксированную высоту */
+    object-fit: contain;/* показываем всё изображение */
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* по одной карточке в ряд */
+  }
+}
 
   .footer { text-align: center; padding: 2rem; color: #777; }
 </style>
